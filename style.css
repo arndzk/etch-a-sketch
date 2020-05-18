@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+#grid {
+    margin: 5rem;
+    border: 1px solid black;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-box {
+    border: .1rem solid gray;
+    width: 3rem;
+    height: 3rem;
+    flex-basis: 6.25%;
+}
