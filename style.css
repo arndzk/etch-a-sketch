@@ -10,19 +10,24 @@ body {
     align-items: center;
 }
 
-#grid {
+.flex-grid {
     margin: 5rem;
     border: 1px solid black;
     display: flex;
     flex: 1;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    width: 1080px;
+    height: 1080px;
 }
 
-.grid-box {
+.grid-col {
     border: .1rem solid gray;
-    width: 3rem;
-    height: 3rem;
-    flex-basis: 6.25%;
+    flex: 1;
+    flex-direction: column;
+    width: 6.25%
+}
+
+.grid-sqr {
+    border: .1rem solid gray;
+    flex: 1;
+    height: 6.25%;
 }
