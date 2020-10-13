@@ -1,33 +1,26 @@
 html, body {
-    margin: 0;
-    padding: 0;
+    text-align: center;
     font-family: sans-serif;
     user-select: none;
 }
 
-body {
-    display: flex;
-    align-items: center;
-}
-
 .flex-grid {
-    margin: 5rem;
-    border: 1px solid black;
     display: flex;
-    flex: 1;
-    width: 1080px;
-    height: 1080px;
+    flex-direction: column;
+    width: 900px;
+    height: 900px;
+    margin: 20px auto 0 auto;
+    border: 1px solid black;
 }
 
-.grid-col {
+.grid-row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
     border: .1rem solid gray;
-    flex: 1;
-    flex-direction: column;
-    width: 6.25%
 }
 
 .grid-sqr {
+    flex-grow: 1;
     border: .1rem solid gray;
-    flex: 1;
-    height: 6.25%;
 }

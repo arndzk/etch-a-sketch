@@ -1,16 +1,18 @@
+let numOfRows = 16;
+
 const grid = document.querySelector('.flex-grid');
 
-for(let i = 0; i <= 15; i++) {
-        const gridCol = document.createElement('div');
-        gridCol.classList.add('grid-col');
-        grid.appendChild(gridCol);
+for(let i = 0; i < numOfRows; i++) {
+        const gridRow = document.createElement('div');
+        gridRow.classList.add('grid-row');
+        grid.appendChild(gridRow);
 }
 
-const cols = Array.from(document.querySelectorAll('.grid-col'));
-cols.forEach((col) => {
-    for(let j = 0; j <= 15; j++) {
+const rows = Array.from(document.querySelectorAll('.grid-row'));
+rows.forEach((row) => {
+    for(let j = 0; j < numOfRows; j++) {
         const gridSqr = document.createElement('div');
         gridSqr.classList.add('grid-sqr');
-        col.appendChild(gridSqr);
+        row.appendChild(gridSqr);
     }
 });
