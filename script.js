@@ -10,9 +10,20 @@ for(let i = 0; i < numOfRows; i++) {
 
 const rows = Array.from(document.querySelectorAll('.grid-row'));
 rows.forEach((row) => {
-    for(let j = 0; j < numOfRows; j++) {
+    for(let i = 0; i < numOfRows; i++) {
         const gridSqr = document.createElement('div');
         gridSqr.classList.add('grid-sqr');
         row.appendChild(gridSqr);
     }
 });
+
+const squares = Array.from(document.querySelectorAll('.grid-sqr'));
+squares.forEach((square) => {
+    for(let i = 0; i < (numOfRows * numOfRows); i++) {
+        square.addEventListener("mouseover", mouseOver, false);
+    }
+});
+
+function mouseOver() {
+    
+}
