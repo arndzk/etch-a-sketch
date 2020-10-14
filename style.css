@@ -22,4 +22,5 @@ html, body {
 .grid-sqr {
     flex-grow: 1;
     border: .1rem solid lightgray;
+    background-color: white;
 }
