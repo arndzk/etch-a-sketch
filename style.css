@@ -17,10 +17,9 @@ html, body {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    border: .1rem solid gray;
 }
 
 .grid-sqr {
     flex-grow: 1;
-    border: .1rem solid gray;
+    border: .1rem solid lightgray;
 }
